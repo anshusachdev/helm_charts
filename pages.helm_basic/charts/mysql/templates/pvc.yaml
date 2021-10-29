@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc-falna
+  namespace: falna
+spec:
+  storageClassName: database-falna
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
